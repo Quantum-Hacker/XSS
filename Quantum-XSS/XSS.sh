@@ -11,7 +11,7 @@ cyan="\e[0;36m"
 end="\e[0m"
 
 echo -e "$cyan
-Quantum XSS
+Quantum-XSS
 $end "
 
 printf "$bold$blue ** Host is Quantum :) ** \n\n$end"
