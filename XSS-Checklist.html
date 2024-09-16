@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script>((e,t,n,r)=>{let o=e();window.mm=o.Markmap.create("svg#mindmap",(t||o.deriveOptions)(r),n)})(()=>window.markmap,null,{"content":"Cross-Site Scripting (XSS) Testing","children":[{"content":"XSS Techniques and Payloads","children":[{"content":"QuickXSS Tool","children":[{"content":"Try XSS using QuickXSS tool by theinfosecguy","children":[],"payload":{"lines":"5,7"}}],"payload":{"lines":"4,5"}},{"content":"XSS via File Upload","children":[{"content":"Upload file using '\"&gt;.txt","children":[],"payload":{"lines":"8,9"}},{"content":"If script tags are banned, use <code>&lt;img&gt;</code> and other HTML tags","children":[],"payload":{"lines":"9,11"}}],"payload":{"lines":"7,8"}},{"content":"XSS via JavaScript Reflection","children":[{"content":"If output is reflected back inside the JavaScript as a value of any variable, use <code>alert(1)</code>","children":[],"payload":{"lines":"12,13"}},{"content":"If <code>\"</code> are filtered, use this payload <code>/&gt;</code>","children":[],"payload":{"lines":"13,14"}},{"content":"Upload a JavaScript payload using an Image file","children":[],"payload":{"lines":"14,16"}}],"payload":{"lines":"11,12"}},{"content":"Bypassing Filters","children":[{"content":"Unusual way to execute your JS payload is to change method from POST to GET","children":[],"payload":{"lines":"17,18"}},{"content":"It may bypass filters sometimes","children":[],"payload":{"lines":"18,20"}}],"payload":{"lines":"16,17"}},{"content":"Tag Attribute Value","children":[{"content":"Input landed - <code>\" onfocus=\"alert(document.cookie)\"</code>","children":[],"payload":{"lines":"21,22"}},{"content":"Payload to be inserted - <code>\" onfocus=\"alert(document.cookie)\"</code>","children":[],"payload":{"lines":"22,23"}},{"content":"Syntax Encoding payload <code>\"%3cscript%3ealert(document.cookie)%3c/script%3e\"</code>","children":[],"payload":{"lines":"23,25"}}],"payload":{"lines":"20,21"}}],"payload":{"lines":"2,3"}},{"content":"XSS Filter Evasion","children":[{"content":"HTML Entity Encoding","children":[{"content":"<code>&lt; and &gt;</code> can be replaced with HTML entities <code>&lt; and &gt;</code>","children":[],"payload":{"lines":"28,30"}}],"payload":{"lines":"27,28"}},{"content":"XSS Polyglot","children":[{"content":"You can try an XSS polyglot, e.g., `javascript:/*-&gt;","children":[],"payload":{"lines":"31,33"}}],"payload":{"lines":"30,31"}}],"payload":{"lines":"25,26"}},{"content":"XSS Firewall Bypass","children":[{"content":"Bypassing Lowercase Blocking","children":[{"content":"Check if the firewall is blocking only lowercase","children":[],"payload":{"lines":"36,38"}}],"payload":{"lines":"35,36"}},{"content":"Bypassing Regex Filters","children":[{"content":"Try to break firewall regex with new line <code>(\\r\\n)</code>","children":[],"payload":{"lines":"39,40"}},{"content":"Try Double Encoding","children":[],"payload":{"lines":"40,42"}}],"payload":{"lines":"38,39"}},{"content":"Testing for Recursive Filters","children":[{"content":"Injecting anchor tag without whitespaces","children":[],"payload":{"lines":"43,44"}},{"content":"Try to bypass whitespaces using Bullet","children":[],"payload":{"lines":"44,45"}},{"content":"Try to change request method","children":[],"payload":{"lines":"45,47"}}],"payload":{"lines":"42,43"}}],"payload":{"lines":"33,34"}},{"content":"Other Techniques","children":[{"content":"Trailing Slash","children":[{"content":"The trailing <code>/</code> closing the tag can sometimes break filters","children":[],"payload":{"lines":"50,52"}}],"payload":{"lines":"49,50"}},{"content":"Case Sensitivity","children":[{"content":"Check if the filter is case sensitive","children":[],"payload":{"lines":"53,55"}}],"payload":{"lines":"52,53"}},{"content":"Unusual Event Handlers","children":[{"content":"Try <code>onxss=</code> or <code>onerror=</code> instead of the most known <code>on{}</code> event handlers","children":[],"payload":{"lines":"56,58"}}],"payload":{"lines":"55,56"}},{"content":"Partial Payload Reflection","children":[{"content":"If the response only contains part of the payload, get creative with chained payloads","children":[],"payload":{"lines":"59,60"}}],"payload":{"lines":"58,59"}}],"payload":{"lines":"47,48"}}],"payload":{"lines":"0,1"}},null)</script>
+</body>
+</html>
