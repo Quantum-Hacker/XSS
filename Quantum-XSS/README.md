@@ -11,7 +11,7 @@ Automate XSS scanning using Dalfox.
 Save and organize results in structured directories.
 
 Prerequisites
-To run Custom-XSS, you need to have the following tools installed on your system:
+To run Quantum-XSS, you need to have the following tools installed on your system:
 
 Waybackurls-https://github.com/tomnomnom/waybackurls
 
